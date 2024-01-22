@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./lineawesome/lineawesome/css/line-awesome.css">
-    <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./bootstrap5/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./style/style.css">
+    <script src="./jquery.js"></script>
     <title>FCE KATSINA</title>
 </head>
 <body>
@@ -14,19 +15,11 @@
             <img id="logo" src="./logo.png" alt="">
             <h3>FEDERAL COLLEGE OF EDUCATION, KATSINA (FCE $ ATC)</h3>
             <header>
-            <ul class="ul">
-                <i class="la la-bars"></i>
-                <div>
-                    <li>
-                        <a href="#">Register</a>
-                    </li>
-                    <li>
-                        <a href="#">Login</a>
-                    </li>
-                </div>
-            </ul>
         </div>
-        <nav>
+         <li id="bars">
+            <i class="la la-bars"></i>
+        </li>
+        <nav class="nav">
             <ul>
                 <li class="active">
                     
@@ -51,17 +44,17 @@
                 <li>
                     <i class="la la-info"></i>
                     <a href="#">Registration Information</a>
+                </li>
+                <li>
+                    <i class="la la-user"></i>
+                    <a href="#">Login</a>
+                </li>
+                
             </ul>
         </nav>
+       
     </header>
-        <article class="article">
-           <div>
-            <p>Better Education For Better</p>
-            <h2>
-                Welcome to <br> FEDERAL COLLEGE OF EDUCATION
-            </h2>
-           </div>
-        </article>
+  
         <hr>
         <section>
             <h3>History of Federal College of Education,Katsina</h3>
@@ -88,5 +81,13 @@
         </p>
     </footer>
 </div>
+<script>
+    $(document).ready(function () {
+        // alert("hellphhhhhhhhh")
+        $("#bars").click(function () {
+            (".nav").Slideup()
+        })
+    })
+</script>
 </body>
 </html>
